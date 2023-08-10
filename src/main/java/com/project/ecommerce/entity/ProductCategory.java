@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce.entity;
+package com.project.ecommerce.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

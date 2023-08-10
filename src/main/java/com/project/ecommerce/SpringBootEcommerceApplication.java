@@ -1,4 +1,4 @@
-package com.luv2code.ecommerce;
+package com.project.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
