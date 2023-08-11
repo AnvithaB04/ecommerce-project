@@ -17,6 +17,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "category_id", nullable = false)
+    private ProductCategory category;
     @Column(name = "sku")
     private String sku;
     @Column(name = "name")
@@ -33,7 +36,7 @@ public class Product {
     private int unitsInStock;
     @Column(name = "dateCreated")
     @CreationTimestamp
-    private int dateCreated;
+    private Date dateCreated;
     @Column(name = "lastUpdated")
     @UpdateTimestamp
     private Date lastUpdated;
